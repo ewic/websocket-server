@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "websocket-server",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "Websocket Base Server",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <19"
@@ -31,9 +31,10 @@
     "lint": "eslint . --ext .ts --ext .mts",
     "test": "jest --coverage",
     "prettier": "prettier --config .prettierrc --write .",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "dev": "nodemon build/src/main.js"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Eric Zhang",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.6",
